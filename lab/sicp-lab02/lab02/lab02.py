@@ -127,7 +127,6 @@ def cycle(f1, f2, f3):
     """
     "*** YOUR CODE HERE ***"
     def cycle_function_maker(n):
-       
         def cycle_function(x):
             cnt = 1
             while cnt <= n:
@@ -137,10 +136,7 @@ def cycle(f1, f2, f3):
                     x = f2(x)
                 else:
                     x = f3(x)
-
                 cnt = cnt + 1
             return x
-        
         return cycle_function
-   
     return cycle_function_maker
